@@ -14,6 +14,7 @@ import {
   ListItemIcon,
 } from "@material-ui/core";
 
+
 import { makeStyles } from "@material-ui/styles";
 import { useTheme } from "@mui/material/styles";
 
@@ -55,8 +56,8 @@ const TopHeader = (props) => {
     setAnchor(event.currentTarget);
   };
   return (
-    <div className={classes.root}>
-      <AppBar>
+    <div className={classes.root} > 
+      <AppBar style={{ backgroundColor:'white' }} elevation={0}> 
         <Toolbar>
           <Typography
             variant="h5"
@@ -64,7 +65,7 @@ const TopHeader = (props) => {
             color="white"
             className={classes.title}
           >
-            E-commarch
+          <span className="navbar" >  E-commarch </span> 
           </Typography>
           {isMobile ? (
             <>
@@ -93,18 +94,18 @@ const TopHeader = (props) => {
               >
                 {/* Mens  */}
                 <MenuItem onClick={() => setAnchor(null)} to="/mens">
-                  <Typography variant="h6"> Mens </Typography>
+                  <Typography variant="h6" className="navbar_menu"> Mens </Typography>
                 </MenuItem>
                 {/* Womens  */}
 
                 <MenuItem onClick={() => setAnchor(null)} to="/women">
-                  <Typography variant="h6"> Wo-Mens </Typography>
+                  <Typography variant="h6" className="navbar_menu"> Wo-Mens </Typography>
                 </MenuItem>
                 <MenuItem onClick={() => setAnchor(null)} to="/sports">
-                  <Typography variant="h6"> Sports </Typography>
+                  <Typography variant="h6" className="navbar_menu"> Sports </Typography>
                 </MenuItem>
                 <MenuItem onClick={() => setAnchor(null)} to="/brands">
-                  <Typography variant="h6"> Brands </Typography>
+                  <Typography variant="h6" className="navbar_menu"> Brands </Typography>
                 </MenuItem>
               </Menu>
             </>
@@ -112,18 +113,18 @@ const TopHeader = (props) => {
             <div style={{ marginRight: "2rem", display: "flex" }}>
               {/* Mens  */}
               <MenuItem onClick={() => setAnchor(null)} to="/mens">
-                <Typography variant="h6"> Mens </Typography>
+                <Typography variant="h6" className="navbar_menu"> Mens </Typography>
               </MenuItem>
               {/* Womens  */}
 
               <MenuItem onClick={() => setAnchor(null)} to="/women">
-                <Typography variant="h6"> Wo-Mens </Typography>
+                <Typography variant="h6" className="navbar_menu"> Wo-Mens </Typography>
               </MenuItem>
               <MenuItem onClick={() => setAnchor(null)} to="/sports">
-                <Typography variant="h6"> Sports </Typography>
+                <Typography variant="h6" className="navbar_menu"> Sports </Typography>
               </MenuItem>
               <MenuItem onClick={() => setAnchor(null)} to="/brands">
-                <Typography variant="h6"> Brands </Typography>
+                <Typography variant="h6" className="navbar_menu"> Brands </Typography>
               </MenuItem>
             </div>
           )}
