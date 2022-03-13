@@ -1,17 +1,18 @@
 import React from "react";
+import LandingPageFooter from "../Footer/LandingPageFooter";
+import Subscription from "../MainHome/Subscription";
 import TopHeader from "../TopHeader/TopHeader";
 import TopHeaderBanner from "../TopHeader/TopHeaderBanner";
 
 const MainHomePage = () => {
   return (
-    <>
-      <section>
-        <TopHeader></TopHeader>
-      </section>
-      <section style={{ marginTop:80}}>
-        <TopHeaderBanner></TopHeaderBanner>
-      </section>
-    </>
+    <div>
+      <TopHeader></TopHeader>
+      <TopHeaderBanner></TopHeaderBanner>
+
+      <Subscription> </Subscription>
+      <LandingPageFooter></LandingPageFooter>
+    </div>
   );
 };
 
