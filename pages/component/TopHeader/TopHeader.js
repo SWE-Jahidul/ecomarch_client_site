@@ -104,6 +104,11 @@ const TopHeader = (props) => {
                 <MenuItem onClick={() => setAnchor(null)} to="/sports">
                   <Typography variant="h6" className="navbar_menu"> Sports </Typography>
                 </MenuItem>
+
+                <MenuItem onClick={() => setAnchor(null)} to="/sports">
+                  <Typography variant="h6" className="navbar_menu"> Kids </Typography>
+                </MenuItem>
+
                 <MenuItem onClick={() => setAnchor(null)} to="/brands">
                   <Typography variant="h6" className="navbar_menu"> Brands </Typography>
                 </MenuItem>
@@ -123,6 +128,11 @@ const TopHeader = (props) => {
               <MenuItem onClick={() => setAnchor(null)} to="/sports">
                 <Typography variant="h6" className="navbar_menu"> Sports </Typography>
               </MenuItem>
+
+              <MenuItem onClick={() => setAnchor(null)} to="/sports">
+                <Typography variant="h6" className="navbar_menu"> Kids </Typography>
+              </MenuItem>
+
               <MenuItem onClick={() => setAnchor(null)} to="/brands">
                 <Typography variant="h6" className="navbar_menu"> Brands </Typography>
               </MenuItem>
